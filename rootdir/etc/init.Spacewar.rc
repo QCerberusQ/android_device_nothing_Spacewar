@@ -190,3 +190,5 @@ on property:vendor.post_boot.parsed=1
     # Input boost runtime
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1728000 4:2208000"
 
+    # Restart thermal after conf change
+    restart vendor.thermal-engine
