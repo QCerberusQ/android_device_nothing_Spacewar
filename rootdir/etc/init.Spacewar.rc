@@ -186,3 +186,7 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_upmigrate 95
     write /proc/sys/kernel/sched_downmigrate 85
     write /proc/sys/kernel/sched_min_task_util_for_boost 50
+
+    # Input boost runtime
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1728000 4:2208000"
+
